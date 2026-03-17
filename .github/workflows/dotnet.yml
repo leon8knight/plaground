@@ -23,6 +23,7 @@ jobs:
         
     - name: Restore dependencies
       run: dotnet restore
+      working-directory: FirstAction
     - name: Build
       run: dotnet build --no-restore FirstAction.slnx
       working-directory: FirstAction
